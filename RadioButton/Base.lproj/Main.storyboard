@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RadioButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="3jm-R1-hAT">
+                                <rect key="frame" x="21" y="321.5" width="333" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eI9-hx-g2i">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="24"/>
+                                        <state key="normal" image="unchecked">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Nam">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="checked"/>
+                                        <connections>
+                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gee-FQ-yVl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdi-jt-Oc9">
+                                        <rect key="frame" x="142" y="0.0" width="45" height="24"/>
+                                        <state key="normal" image="unchecked">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Nữ">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="checked"/>
+                                        <connections>
+                                            <action selector="nuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLb-WK-0iv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLw-vM-PVY">
+                                        <rect key="frame" x="267" y="0.0" width="66" height="24"/>
+                                        <state key="normal" image="unchecked">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Bê ĐÊ">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="selected" image="checked"/>
+                                        <connections>
+                                            <action selector="bedeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZp-dH-WBQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3jm-R1-hAT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="428-pW-fhO"/>
+                            <constraint firstItem="3jm-R1-hAT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OOO-tM-NRf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bedeButton" destination="rLw-vM-PVY" id="We8-RS-web"/>
+                        <outlet property="nameButton" destination="eI9-hx-g2i" id="Cal-y6-57b"/>
+                        <outlet property="nuButton" destination="mdi-jt-Oc9" id="vKv-fu-5tm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked" width="24" height="24"/>
+        <image name="unchecked" width="24" height="24"/>
+    </resources>
+</document>
